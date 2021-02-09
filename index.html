@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HTML5 Website with Bootstrap | Responsive Website Design</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- Bootstrap 4.5 CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Top Bar -->
+	<div class="top-bar">
+	</div>
+
+	<!-- End Top Bar -->
+
+
+	<!-- Navigation -->
+	<nav class="navbar bg-light navbar-light navbar-expand-lg">
+		<div class="container">
+
+			<a href="index.html" class="navbar-brand"><img src="img/mylogo.png" 
+				alt="Logo" title="Logo"></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link 
+						active">Home</a></li>
+						<li class="nav-item"><a href="#projects" class="nav-link 
+							active">Projects</a></li>
+				</ul>
+
+			</div>
+
+
+
+
+
+
+
+		</div>
+	</nav>
+	<!-- End Navigation -->
+
+
+	<!-- Image Carousel -->
+
+	<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="6500">
+
+
+		<!-- Carousel Content -->
+		<div class="carousel-inner">
+
+			<div class="carousel-item active">
+				<img src="img/bluemoon.jpg" alt="" class="w-100">
+				<div class="carousel-caption">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-8 bg-custom d-none d-lg-block py-3 px-0">
+								<h1>Well, hello there...</h1>
+								<div class="border-top border-primary w-50 mx-auto my-3"></div>
+								<h3 class="pb-3">Welcome to my website.</h3>
+								<h4 class="pb-3">Here you'll find my latest ML Projects.</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img src="img/blueumbrella.jpg" alt="" class="w-100">
+				<div class="carousel-caption">
+					<div class="container">
+						<div class="row justify-content-end text-right">
+							<div class="col-5 bg-custom d-none d-lg-block py-3 px-0 pr-3">
+								<h3 class="pb-3">A Quick About Me</h3>
+								<p class="pb-3">With a background in both Data Science & Quantitative Investment Analysis, I am passionate about exploring nuanced patterns and working on challenging yet truly insightful projects.</p>
+<!--							<a href="#" class="btn btn-primary btn-lg">See Project</a> -->	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img src="img/bluemountain.jpg" alt="" class="w-100">
+				<div class="carousel-caption">
+					<div class="container">
+						<div class="row justify-content-start text-left">
+							<div class="col-7 bg-custom d-none d-lg-block py-3 px-0 pl-3">
+								<h3 class="pb-3">Want to get in touch?</h3>
+								<h4 class="lead">Send me an email.</h4>
+								<h4 class="lead">Or you can get in touch via LinkedIn.</h4>
+								<a href="mailto:anas.h.afzal@gmail.com" target="_blank" class="btn btn-danger btn-lg">Send me an email</a>
+								<a href="https://www.linkedin.com/in/anasafzal/" target="_blank" class="btn btn-primary btn-lg">My LinkedIn Profile</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- End Carousel Content -->
+
+
+		<!-- Previous & Next Buttons -->
+		<a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+			<span class="fas fa-chevron-left fa-3x"></span>
+		</a>
+
+		<a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+			<span class="fas fa-chevron-right fa-3x"></span>
+		</a>
+
+		<!-- End Previous & Next Buttons -->
+
+	</div>
+	<!-- End Image Carousel -->
+
+	<!-- Main Page Heading  -->
+	<div class="col12 text-center mt-5" id="projects">
+		<h1 class="text-dark pt-4">End-To-End Machine Learning Projects</h1>
+		<div class="border-top border-primary w-25 mx-auto my-3"></div>
+		<p class="lead">These contain a combination of detailed blog posts, code, & deployed ML models as interactive Web Apps!</p>
+	</div>
+
+	<!-- Three Column Section -->
+	<div class="container">
+		<div class="row my-5">
+
+			<div class="col-md-6 my-6">
+				<img src="img/imagedetector.jpg" alt="" class="w-100">
+				<h4 class="my-4">Detect Traffic Sign Image.</h4>
+				<p>Using Computer Vision & Convolutional Neural Networks to build, train & test a classifier model that detects German Road Signs with > 95% accuracy. Using Streamlit & Heroku, I then successfully built & deployed a web app for anyone to use this model to detect German road signs.</p>
+				<a href="https://github.com/anasafzal-ai/finaltrafficimage.git" target="_blank" class="btn btn-outline-dark btn-df ml-6">Code</a>
+
+
+				<a href="https://trafficsigndetector-app.herokuapp.com/" target="_blank" class="btn btn-outline-dark btn-df ml-12">Deployed Web App</a>
+			</div>
+
+			<div class="col-md-6 my-6">
+				<img src="img/pimaindianproject.jpg" alt="" class="w-100">
+				<h4 class="my-4">Forecasting The Onset Of Diabetes Mellitus.</h4>
+				<p>In exploring this dataset of Pima Indian women, I built, trained, tested an array of Machine Learning models, and subsequently evaulated the best performer in predicting Diabetes Mellitus.</p>
+				<a href="https://anas-afzal.medium.com/classifying-predicting-diabetes-mellitus-amongst-pima-indian-women-c9e57f2409fa" target="_blank" class="btn btn-outline-dark btn-df mr-12">Blog Post</a>
+				<a href="https://github.com/anasafzal-ai/classifydiabetes.git" target="_blank" class="btn btn-outline-dark btn-df ml-6">Code</a>
+			</div>
+
+
+			<div class="col-md-6 my-6">
+				<img src="img/badloansproject.jpg" alt="" class="w-100">
+				<h4 class="my-4">Predicting Consumer Creditworthiness & Assesing Open Banking</h4>
+				<p>By investigating the Consumer Credit Market, via German Loan Data, I explore & build a Machine Learning Classification model to adequately assess and identify loan defaulters.</p>
+				<a href="https://anas-afzal.medium.com/predicting-consumer-creditworthiness-the-role-of-machine-learning-e01c28b50d80" target="_blank" class="btn btn-outline-dark btn-df mr-12">Blog Post</a>
+				<a href="https://github.com/anasafzal-ai/loanprediction.git" target="_blank" class="btn btn-outline-dark btn-df ml-6">Code</a>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- End Three Column Section -->
+
+
+	<!-- Emoji Navbar First -->
+
+
+	<!-- Start Fixed Background IMG -->
+
+	<!-- End Fixed Background IMG -->
+ 
+	
+	<!-- Emoji Navbar Second -->
+
+
+	<!-- Modal Popup -->
+
+		
+	<!-- Start Two Column Section -->
+
+	<!-- End Two Column Section -->
+
+
+	<!-- Start Jumbotron -->
+
+	<!-- End Jumbotron -->
+
+
+	<!-- Start Footer -->
+<footer>
+	<div class="container">
+		<div class="row text-light text-center py-4 justify-content-center">
+
+			<div class="col-sm-10 col-md-8 col-lg-6">
+				<img src="img/footername2.png" alt="">
+				<p>"All men dream, but not equally. Those who dream by night in the dusty recesses 
+					of their minds, wake in the day to find that it was vanity: but the dreamers of 
+					the day are dangerous men, for they may act on their dreams with open eyes, 
+					to make them possible." - T.E. Lawrence</p>
+				<ul class="social pt-3">
+					<li><a href="https://www.linkedin.com/in/anasafzal/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="https://github.com/anasafzal-ai" target="_blank"><i class="fab fa-github"></i></a></li>
+				</ul>
+			</div>
+
+
+
+		</div>
+	</div>
+</footer>
+	<!-- End Footer -->
+
+
+	<!-- Start Socket -->
+
+	<!-- End Socket -->
+
+<div class="container my-5"></div>
+
+	<!-- Script Source Files -->
+
+	<!-- jQuery -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- Bootstrap 4.5 JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Font Awesome -->
+	<script src="js/all.min.js"></script>
+
+	<!-- End Script Source Files -->
+</body>
+</html>
